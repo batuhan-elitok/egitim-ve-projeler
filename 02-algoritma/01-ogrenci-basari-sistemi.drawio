@@ -1,0 +1,116 @@
+<mxfile host="app.diagrams.net" agent="Codex">
+  <diagram id="abra-alg-01" name="Öğrenci Başarı Sistemi">
+    <mxGraphModel dx="793" dy="1027" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1169" pageHeight="1654" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="title" parent="1" style="text;html=1;align=center;verticalAlign=middle;fontSize=20;fontStyle=1" value="&lt;b&gt;01 - Öğrenci Başarı Sistemi&lt;/b&gt;&lt;br&gt;Video örnekleri 1 ve 6" vertex="1">
+          <mxGeometry height="50" width="500" x="330" y="20" as="geometry" />
+        </mxCell>
+        <mxCell id="start" parent="1" style="rounded=1;whiteSpace=wrap;html=1;arcSize=50;fillColor=#d5e8d4;strokeColor=#82b366;fontStyle=1" value="BAŞLA" vertex="1">
+          <mxGeometry height="60" width="160" x="500" y="90" as="geometry" />
+        </mxCell>
+        <mxCell id="input" parent="1" style="shape=parallelogram;perimeter=parallelogramPerimeter;whiteSpace=wrap;html=1;fixedSize=1;fillColor=#dae8fc;strokeColor=#6c8ebf" value="Hesap türünü gir:&lt;br&gt;1 = Basit ortalama&lt;br&gt;2 = Vize/final&lt;br&gt;&lt;br&gt;Not 1 ve Not 2&#39;yi gir" vertex="1">
+          <mxGeometry height="120" width="240" x="460" y="190" as="geometry" />
+        </mxCell>
+        <mxCell id="valid" parent="1" style="rhombus;whiteSpace=wrap;html=1;fillColor=#ffe6cc;strokeColor=#d79b00" value="Tür 1 veya 2 mi?&lt;br&gt;Notlar 0–100 arasında mı?" vertex="1">
+          <mxGeometry height="150" width="260" x="450" y="350" as="geometry" />
+        </mxCell>
+        <mxCell id="error" parent="1" style="shape=parallelogram;perimeter=parallelogramPerimeter;whiteSpace=wrap;html=1;fixedSize=1;fillColor=#f8cecc;strokeColor=#b85450" value="Hatalı giriş!&lt;br&gt;Tür ve notları yeniden gir." vertex="1">
+          <mxGeometry height="80" width="230" x="80" y="385" as="geometry" />
+        </mxCell>
+        <mxCell id="type" parent="1" style="rhombus;whiteSpace=wrap;html=1;fillColor=#ffe6cc;strokeColor=#d79b00" value="Hesap türü = 1 mi?" vertex="1">
+          <mxGeometry height="130" width="230" x="465" y="550" as="geometry" />
+        </mxCell>
+        <mxCell id="simpleCalc" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#fff2cc;strokeColor=#d6b656" value="Ortalama = (Not 1 + Not 2) / 2&lt;br&gt;Eşik = 70" vertex="1">
+          <mxGeometry height="80" width="250" x="170" y="730" as="geometry" />
+        </mxCell>
+        <mxCell id="simpleDecision" parent="1" style="rhombus;whiteSpace=wrap;html=1;fillColor=#ffe6cc;strokeColor=#d79b00" value="Ortalama ≥ 70 mi?" vertex="1">
+          <mxGeometry height="120" width="210" x="190" y="860" as="geometry" />
+        </mxCell>
+        <mxCell id="simpleGood" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#d5e8d4;strokeColor=#82b366" value="Durum = İYİ" vertex="1">
+          <mxGeometry height="60" width="180" x="40" y="1230" as="geometry" />
+        </mxCell>
+        <mxCell id="simpleBad" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#f8cecc;strokeColor=#b85450" value="Durum = KÖTÜ" vertex="1">
+          <mxGeometry height="60" width="180" x="360" y="1110" as="geometry" />
+        </mxCell>
+        <mxCell id="weightedCalc" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#fff2cc;strokeColor=#d6b656" value="Ortalama = Vize × 0,40&lt;br&gt;+ Final × 0,60&lt;br&gt;Eşik = 45" vertex="1">
+          <mxGeometry height="100" width="260" x="740" y="720" as="geometry" />
+        </mxCell>
+        <mxCell id="weightedDecision" parent="1" style="rhombus;whiteSpace=wrap;html=1;fillColor=#ffe6cc;strokeColor=#d79b00" value="Ortalama ≥ 45 mi?" vertex="1">
+          <mxGeometry height="120" width="210" x="765" y="860" as="geometry" />
+        </mxCell>
+        <mxCell id="passed" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#d5e8d4;strokeColor=#82b366" value="Durum = GEÇTİ" vertex="1">
+          <mxGeometry height="60" width="180" x="650" y="1110" as="geometry" />
+        </mxCell>
+        <mxCell id="failed" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#f8cecc;strokeColor=#b85450" value="Durum = KALDI" vertex="1">
+          <mxGeometry height="60" width="180" x="930" y="1230" as="geometry" />
+        </mxCell>
+        <mxCell id="output" parent="1" style="shape=parallelogram;perimeter=parallelogramPerimeter;whiteSpace=wrap;html=1;fixedSize=1;fillColor=#dae8fc;strokeColor=#6c8ebf" value="Ortalama ve durumu ekrana yaz" vertex="1">
+          <mxGeometry height="80" width="260" x="450" y="1310" as="geometry" />
+        </mxCell>
+        <mxCell id="end" parent="1" style="rounded=1;whiteSpace=wrap;html=1;arcSize=50;fillColor=#d5e8d4;strokeColor=#82b366;fontStyle=1" value="BİTİR" vertex="1">
+          <mxGeometry height="60" width="160" x="500" y="1450" as="geometry" />
+        </mxCell>
+        <mxCell id="e1" edge="1" parent="1" source="start" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;endArrow=block;endFill=1" target="input">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="e2" edge="1" parent="1" source="input" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;endArrow=block;endFill=1" target="valid">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="e3" edge="1" parent="1" source="valid" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;endArrow=block;endFill=1" target="error" value="Hayır">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="e4" edge="1" parent="1" source="error" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;endArrow=block;endFill=1" target="input" value="Tekrar">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="190" y="250" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="e5" edge="1" parent="1" source="valid" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;endArrow=block;endFill=1" target="type" value="Evet">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="e6" edge="1" parent="1" source="type" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;endArrow=block;endFill=1" target="simpleCalc" value="Evet: basit">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="e7" edge="1" parent="1" source="type" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;endArrow=block;endFill=1" target="weightedCalc" value="Hayır: ağırlıklı">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="e8" edge="1" parent="1" source="simpleCalc" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;endArrow=block;endFill=1" target="simpleDecision">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="e9" edge="1" parent="1" source="simpleDecision" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;endArrow=block;endFill=1" target="simpleGood" value="Evet">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="e10" edge="1" parent="1" source="simpleDecision" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;endArrow=block;endFill=1" target="simpleBad" value="Hayır">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="e11" edge="1" parent="1" source="weightedCalc" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;endArrow=block;endFill=1" target="weightedDecision">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="e12" edge="1" parent="1" source="weightedDecision" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;endArrow=block;endFill=1" target="passed" value="Evet">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="e13" edge="1" parent="1" source="weightedDecision" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;endArrow=block;endFill=1" target="failed" value="Hayır">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="e14" edge="1" parent="1" source="simpleGood" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;endArrow=block;endFill=1" target="output">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="e15" edge="1" parent="1" source="simpleBad" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;endArrow=block;endFill=1" target="output">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="e16" edge="1" parent="1" source="passed" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;endArrow=block;endFill=1" target="output">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="e17" edge="1" parent="1" source="failed" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;endArrow=block;endFill=1" target="output">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="e18" edge="1" parent="1" source="output" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;endArrow=block;endFill=1" target="end">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>

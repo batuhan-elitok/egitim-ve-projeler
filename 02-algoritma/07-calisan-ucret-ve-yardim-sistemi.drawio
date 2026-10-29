@@ -1,0 +1,222 @@
+<mxfile host="app.diagrams.net" agent="Codex">
+  <diagram id="abra-alg-07" name="Çalışan Ücret ve Yardım Sistemi">
+    <mxGraphModel dx="2800" dy="1813" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1400" pageHeight="1900" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="title" parent="1" style="text;html=1;align=center;verticalAlign=middle;fontSize=20;fontStyle=1" value="&lt;b&gt;07 - Çalışan Ücret ve Yardım Sistemi&lt;/b&gt;&lt;br&gt;Video örnekleri 10 ve 11" vertex="1">
+          <mxGeometry height="50" width="500" x="450" y="20" as="geometry" />
+        </mxCell>
+        <mxCell id="start" parent="1" style="rounded=1;whiteSpace=wrap;html=1;arcSize=50;fillColor=#d5e8d4;strokeColor=#82b366;fontStyle=1" value="BAŞLA" vertex="1">
+          <mxGeometry height="60" width="160" x="620" y="90" as="geometry" />
+        </mxCell>
+        <mxCell id="menu" parent="1" style="shape=parallelogram;perimeter=parallelogramPerimeter;whiteSpace=wrap;html=1;fixedSize=1;fillColor=#dae8fc;strokeColor=#6c8ebf" value="Hesap türünü gir:&lt;br&gt;1 = Aile yardımlı maaş&lt;br&gt;2 = Saatlik çalışma ücreti" vertex="1">
+          <mxGeometry height="100" width="260" x="570" y="200" as="geometry" />
+        </mxCell>
+        <mxCell id="isFamily" parent="1" style="rhombus;whiteSpace=wrap;html=1;fillColor=#ffe6cc;strokeColor=#d79b00" value="Hesap türü = 1 mi?" vertex="1">
+          <mxGeometry height="130" width="230" x="585" y="360" as="geometry" />
+        </mxCell>
+        <mxCell id="isHourly" parent="1" style="rhombus;whiteSpace=wrap;html=1;fillColor=#ffe6cc;strokeColor=#d79b00" value="Hesap türü = 2 mi?" vertex="1">
+          <mxGeometry height="130" width="230" x="960" y="360" as="geometry" />
+        </mxCell>
+        <mxCell id="menuError" parent="1" style="shape=parallelogram;perimeter=parallelogramPerimeter;whiteSpace=wrap;html=1;fixedSize=1;fillColor=#f8cecc;strokeColor=#b85450" value="Geçersiz hesap türü!" vertex="1">
+          <mxGeometry height="60" width="210" x="1210" y="450" as="geometry" />
+        </mxCell>
+        <mxCell id="familyInput" parent="1" style="shape=parallelogram;perimeter=parallelogramPerimeter;whiteSpace=wrap;html=1;fixedSize=1;fillColor=#dae8fc;strokeColor=#6c8ebf" value="Sabit maaşı ve&lt;br&gt;çocuk sayısını gir" vertex="1">
+          <mxGeometry height="80" width="230" x="210" y="550" as="geometry" />
+        </mxCell>
+        <mxCell id="familyValid" parent="1" style="rhombus;whiteSpace=wrap;html=1;fillColor=#ffe6cc;strokeColor=#d79b00" value="Maaş ≥ 0 ve çocuk sayısı&lt;br&gt;negatif olmayan tam sayı mı?" vertex="1">
+          <mxGeometry height="140" width="270" x="190" y="700" as="geometry" />
+        </mxCell>
+        <mxCell id="familyError" parent="1" style="shape=parallelogram;perimeter=parallelogramPerimeter;whiteSpace=wrap;html=1;fixedSize=1;fillColor=#f8cecc;strokeColor=#b85450" value="Maaş veya çocuk sayısı geçersiz!" vertex="1">
+          <mxGeometry height="80" width="170" x="-40" y="730" as="geometry" />
+        </mxCell>
+        <mxCell id="child0" parent="1" style="rhombus;whiteSpace=wrap;html=1;fillColor=#ffe6cc;strokeColor=#d79b00" value="Çocuk sayısı = 0 mı?" vertex="1">
+          <mxGeometry height="120" width="230" x="210" y="910" as="geometry" />
+        </mxCell>
+        <mxCell id="rate0" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#fff2cc;strokeColor=#d6b656" value="Yardım oranı = %0" vertex="1">
+          <mxGeometry height="60" width="190" x="-20" y="1070" as="geometry" />
+        </mxCell>
+        <mxCell id="child1" parent="1" style="rhombus;whiteSpace=wrap;html=1;fillColor=#ffe6cc;strokeColor=#d79b00" value="Çocuk sayısı = 1 mi?" vertex="1">
+          <mxGeometry height="120" width="230" x="280" y="1080" as="geometry" />
+        </mxCell>
+        <mxCell id="rate5" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#fff2cc;strokeColor=#d6b656" value="Yardım oranı = %5" vertex="1">
+          <mxGeometry height="60" width="190" x="110" y="1240" as="geometry" />
+        </mxCell>
+        <mxCell id="child2" parent="1" style="rhombus;whiteSpace=wrap;html=1;fillColor=#ffe6cc;strokeColor=#d79b00" value="Çocuk sayısı = 2 mi?" vertex="1">
+          <mxGeometry height="120" width="230" x="380" y="1240" as="geometry" />
+        </mxCell>
+        <mxCell id="rate10" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#fff2cc;strokeColor=#d6b656" value="Yardım oranı = %10" vertex="1">
+          <mxGeometry height="60" width="190" x="270" y="1420" as="geometry" />
+        </mxCell>
+        <mxCell id="rate15" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#fff2cc;strokeColor=#d6b656" value="Yardım oranı = %15" vertex="1">
+          <mxGeometry height="60" width="190" x="520" y="1420" as="geometry" />
+        </mxCell>
+        <mxCell id="familyCalc" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#fff2cc;strokeColor=#d6b656" value="Aile yardımı = Maaş × Yardım oranı&lt;br&gt;Ödenecek tutar = Maaş + Aile yardımı" vertex="1">
+          <mxGeometry height="90" width="320" x="250" y="1540" as="geometry" />
+        </mxCell>
+        <mxCell id="hourInput" parent="1" style="shape=parallelogram;perimeter=parallelogramPerimeter;whiteSpace=wrap;html=1;fixedSize=1;fillColor=#dae8fc;strokeColor=#6c8ebf" value="Çalışılan saati ve&lt;br&gt;saat ücretini gir" vertex="1">
+          <mxGeometry height="80" width="230" x="800" y="550" as="geometry" />
+        </mxCell>
+        <mxCell id="hourValid" parent="1" style="rhombus;whiteSpace=wrap;html=1;fillColor=#ffe6cc;strokeColor=#d79b00" value="Saat ≥ 0 ve&lt;br&gt;saat ücreti ≥ 0 mı?" vertex="1">
+          <mxGeometry height="130" width="220" x="805" y="700" as="geometry" />
+        </mxCell>
+        <mxCell id="hourError" parent="1" style="shape=parallelogram;perimeter=parallelogramPerimeter;whiteSpace=wrap;html=1;fixedSize=1;fillColor=#f8cecc;strokeColor=#b85450" value="Saat veya ücret geçersiz!" vertex="1">
+          <mxGeometry height="70" width="220" x="1110" y="730" as="geometry" />
+        </mxCell>
+        <mxCell id="hourDecision" parent="1" style="rhombus;whiteSpace=wrap;html=1;fillColor=#ffe6cc;strokeColor=#d79b00" value="Çalışılan saat ≤ 40 mı?" vertex="1">
+          <mxGeometry height="130" width="230" x="800" y="920" as="geometry" />
+        </mxCell>
+        <mxCell id="normalCalc" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#fff2cc;strokeColor=#d6b656" value="Ödenecek tutar =&lt;br&gt;Saat × Saat ücreti" vertex="1">
+          <mxGeometry height="80" width="230" x="640" y="1120" as="geometry" />
+        </mxCell>
+        <mxCell id="overtimeCalc" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#fff2cc;strokeColor=#d6b656" value="Ödenecek tutar =&lt;br&gt;40 × Saat ücreti +&lt;br&gt;(Saat − 40) × Saat ücreti × 2" vertex="1">
+          <mxGeometry height="100" width="280" x="960" y="1120" as="geometry" />
+        </mxCell>
+        <mxCell id="output" parent="1" style="shape=parallelogram;perimeter=parallelogramPerimeter;whiteSpace=wrap;html=1;fixedSize=1;fillColor=#dae8fc;strokeColor=#6c8ebf" value="Ödenecek tutarı ekrana yaz" vertex="1">
+          <mxGeometry height="80" width="260" x="760" y="1545" as="geometry" />
+        </mxCell>
+        <mxCell id="end" parent="1" style="rounded=1;whiteSpace=wrap;html=1;arcSize=50;fillColor=#d5e8d4;strokeColor=#82b366;fontStyle=1" value="BİTİR" vertex="1">
+          <mxGeometry height="60" width="160" x="620" y="1730" as="geometry" />
+        </mxCell>
+        <mxCell id="e1" edge="1" parent="1" source="start" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;endArrow=block;endFill=1" target="menu">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="e2" edge="1" parent="1" source="menu" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;endArrow=block;endFill=1" target="isFamily">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="e3" edge="1" parent="1" source="isFamily" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;endArrow=block;endFill=1" target="familyInput" value="Evet">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="e4" edge="1" parent="1" source="isFamily" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;endArrow=block;endFill=1" target="isHourly" value="Hayır">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="e5" edge="1" parent="1" source="isHourly" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;endArrow=block;endFill=1" target="hourInput" value="Evet">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="e6" edge="1" parent="1" source="isHourly" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;endArrow=block;endFill=1" target="menuError" value="Hayır">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="e7" edge="1" parent="1" source="menuError" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;endArrow=block;endFill=1;exitX=0.605;exitY=-0.042;exitDx=0;exitDy=0;exitPerimeter=0;" target="menu" value="Tekrar">
+          <mxGeometry relative="1" x="-0.9231" as="geometry">
+            <mxPoint as="offset" />
+            <Array as="points">
+              <mxPoint x="1337.1" y="250" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="e8" edge="1" parent="1" source="familyInput" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;endArrow=block;endFill=1" target="familyValid">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="e9" edge="1" parent="1" source="familyValid" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;endArrow=block;endFill=1" target="familyError" value="Hayır">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="e10" edge="1" parent="1" source="familyError" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;endArrow=block;endFill=1" target="familyInput" value="Tekrar">
+          <mxGeometry relative="1" x="-0.8809" as="geometry">
+            <mxPoint as="offset" />
+            <Array as="points">
+              <mxPoint x="-110" y="760" />
+              <mxPoint x="-110" y="595" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="e11" edge="1" parent="1" source="familyValid" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;endArrow=block;endFill=1" target="child0" value="Evet">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="e12" edge="1" parent="1" source="child0" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;endArrow=block;endFill=1" target="rate0" value="Evet">
+          <mxGeometry relative="1" x="-0.6596" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="e13" edge="1" parent="1" source="child0" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;endArrow=block;endFill=1" target="child1" value="Hayır">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="e14" edge="1" parent="1" source="child1" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;endArrow=block;endFill=1" target="rate5" value="Evet">
+          <mxGeometry relative="1" x="-0.68" as="geometry">
+            <mxPoint as="offset" />
+            <Array as="points">
+              <mxPoint x="205" y="1140" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="e15" edge="1" parent="1" source="child1" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;endArrow=block;endFill=1" target="child2" value="Hayır">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="e16" edge="1" parent="1" source="child2" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;endArrow=block;endFill=1" target="rate10" value="Evet">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="e17" edge="1" parent="1" source="child2" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;endArrow=block;endFill=1" target="rate15" value="Hayır: 3+ çocuk">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="e18" edge="1" parent="1" source="rate0" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;endArrow=block;endFill=1" target="familyCalc">
+          <mxGeometry relative="1" x="0.1218" as="geometry">
+            <Array as="points">
+              <mxPoint x="75" y="1520" />
+              <mxPoint x="330" y="1520" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="e19" edge="1" parent="1" source="rate5" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;endArrow=block;endFill=1;" target="familyCalc">
+          <mxGeometry relative="1" x="-0.074" as="geometry">
+            <Array as="points">
+              <mxPoint x="205" y="1500" />
+              <mxPoint x="330" y="1500" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="e20" edge="1" parent="1" source="rate10" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;endArrow=block;endFill=1" target="familyCalc">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="e21" edge="1" parent="1" source="rate15" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;endArrow=block;endFill=1" target="familyCalc">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="e22" edge="1" parent="1" source="hourInput" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;endArrow=block;endFill=1" target="hourValid">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="e23" edge="1" parent="1" source="hourValid" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;endArrow=block;endFill=1" target="hourError" value="Hayır">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="e24" edge="1" parent="1" source="hourError" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;endArrow=block;endFill=1" target="hourInput" value="Tekrar">
+          <mxGeometry relative="1" x="-0.7087" as="geometry">
+            <mxPoint as="offset" />
+            <Array as="points">
+              <mxPoint x="1340" y="765" />
+              <mxPoint x="1340" y="590" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="e25" edge="1" parent="1" source="hourValid" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;endArrow=block;endFill=1" target="hourDecision" value="Evet">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="e26" edge="1" parent="1" source="hourDecision" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;endArrow=block;endFill=1" target="normalCalc" value="Evet">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="e27" edge="1" parent="1" source="hourDecision" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;endArrow=block;endFill=1" target="overtimeCalc" value="Hayır">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="e28" edge="1" parent="1" source="familyCalc" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;endArrow=block;endFill=1" target="output">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="e29" edge="1" parent="1" source="normalCalc" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;endArrow=block;endFill=1" target="output">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="755" y="1370" />
+              <mxPoint x="890" y="1370" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="e30" edge="1" parent="1" source="overtimeCalc" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;endArrow=block;endFill=1" target="output">
+          <mxGeometry relative="1" x="-0.129" as="geometry">
+            <Array as="points">
+              <mxPoint x="1100" y="1370" />
+              <mxPoint x="890" y="1370" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="e31" edge="1" parent="1" source="output" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;endArrow=block;endFill=1" target="end">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>

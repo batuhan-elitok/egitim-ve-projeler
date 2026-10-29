@@ -1,0 +1,106 @@
+<mxfile host="app.diagrams.net" agent="Codex">
+  <diagram id="abra-alg-06" name="Tek ve Çift Sayı İstatistikleri">
+    <mxGraphModel dx="548" dy="710" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1169" pageHeight="1654" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="title" parent="1" style="text;html=1;align=center;verticalAlign=middle;fontSize=20;fontStyle=1" value="&lt;b&gt;06 - Tek ve Çift Sayı İstatistikleri&lt;/b&gt;&lt;br&gt;Video örnekleri 9 ve 12" vertex="1">
+          <mxGeometry height="50" width="500" x="330" y="20" as="geometry" />
+        </mxCell>
+        <mxCell id="start" parent="1" style="rounded=1;whiteSpace=wrap;html=1;arcSize=50;fillColor=#d5e8d4;strokeColor=#82b366;fontStyle=1" value="BAŞLA" vertex="1">
+          <mxGeometry height="60" width="160" x="500" y="90" as="geometry" />
+        </mxCell>
+        <mxCell id="input" parent="1" style="shape=parallelogram;perimeter=parallelogramPerimeter;whiteSpace=wrap;html=1;fixedSize=1;fillColor=#dae8fc;strokeColor=#6c8ebf" value="Üst sınırı gir: N" vertex="1">
+          <mxGeometry height="70" width="220" x="470" y="200" as="geometry" />
+        </mxCell>
+        <mxCell id="valid" parent="1" style="rhombus;whiteSpace=wrap;html=1;fillColor=#ffe6cc;strokeColor=#d79b00" value="N pozitif tam sayı mı?" vertex="1">
+          <mxGeometry height="120" width="220" x="470" y="330" as="geometry" />
+        </mxCell>
+        <mxCell id="error" parent="1" style="shape=parallelogram;perimeter=parallelogramPerimeter;whiteSpace=wrap;html=1;fixedSize=1;fillColor=#f8cecc;strokeColor=#b85450" value="Hatalı giriş!&lt;br&gt;Pozitif tam sayı gir." vertex="1">
+          <mxGeometry height="80" width="230" x="90" y="350" as="geometry" />
+        </mxCell>
+        <mxCell id="init" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#fff2cc;strokeColor=#d6b656" value="Sayı = 1&lt;br&gt;Tek toplam = 0&lt;br&gt;Tek çarpım = 1&lt;br&gt;Çift toplam = 0&lt;br&gt;Çift kare toplam = 0" vertex="1">
+          <mxGeometry height="140" width="280" x="440" y="520" as="geometry" />
+        </mxCell>
+        <mxCell id="loop" parent="1" style="rhombus;whiteSpace=wrap;html=1;fillColor=#ffe6cc;strokeColor=#d79b00" value="Sayı ≤ N mi?" vertex="1">
+          <mxGeometry height="120" width="210" x="475" y="730" as="geometry" />
+        </mxCell>
+        <mxCell id="parity" parent="1" style="rhombus;whiteSpace=wrap;html=1;fillColor=#ffe6cc;strokeColor=#d79b00" value="Sayı mod 2 = 0 mı?" vertex="1">
+          <mxGeometry height="130" width="230" x="465" y="930" as="geometry" />
+        </mxCell>
+        <mxCell id="evenCalc" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#fff2cc;strokeColor=#d6b656" value="Çift toplam = Çift toplam + Sayı&lt;br&gt;&lt;br&gt;Çift kare toplam = Çift kare toplam + Sayı²" vertex="1">
+          <mxGeometry height="120" width="300" x="110" y="1140" as="geometry" />
+        </mxCell>
+        <mxCell id="oddCalc" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#fff2cc;strokeColor=#d6b656" value="Tek toplam = Tek toplam + Sayı&lt;br&gt;&lt;br&gt;Tek çarpım = Tek çarpım × Sayı" vertex="1">
+          <mxGeometry height="120" width="300" x="750" y="1140" as="geometry" />
+        </mxCell>
+        <mxCell id="increment" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#fff2cc;strokeColor=#d6b656" value="Sayı = Sayı + 1" vertex="1">
+          <mxGeometry height="70" width="220" x="470" y="1340" as="geometry" />
+        </mxCell>
+        <mxCell id="output" parent="1" style="shape=parallelogram;perimeter=parallelogramPerimeter;whiteSpace=wrap;html=1;fixedSize=1;fillColor=#dae8fc;strokeColor=#6c8ebf" value="Tek toplamı ve çarpımı;&lt;br&gt;çift toplamı ve çift kareler&lt;br&gt;toplamını ekrana yaz" vertex="1">
+          <mxGeometry height="100" width="280" x="810" y="740" as="geometry" />
+        </mxCell>
+        <mxCell id="end" parent="1" style="rounded=1;whiteSpace=wrap;html=1;arcSize=50;fillColor=#d5e8d4;strokeColor=#82b366;fontStyle=1" value="BİTİR" vertex="1">
+          <mxGeometry height="60" width="160" x="870" y="900" as="geometry" />
+        </mxCell>
+        <mxCell id="e1" edge="1" parent="1" source="start" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;endArrow=block;endFill=1" target="input">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="e2" edge="1" parent="1" source="input" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;endArrow=block;endFill=1" target="valid">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="e3" edge="1" parent="1" source="valid" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;endArrow=block;endFill=1" target="error" value="Hayır">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="e4" edge="1" parent="1" source="error" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;endArrow=block;endFill=1" target="input" value="Tekrar">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="50" y="390" />
+              <mxPoint x="50" y="235" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="e5" edge="1" parent="1" source="valid" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;endArrow=block;endFill=1" target="init" value="Evet">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="e6" edge="1" parent="1" source="init" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;endArrow=block;endFill=1" target="loop">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="e7" edge="1" parent="1" source="loop" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;endArrow=block;endFill=1" target="parity" value="Evet">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="e8" edge="1" parent="1" source="loop" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;endArrow=block;endFill=1" target="output" value="Hayır">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="e9" edge="1" parent="1" source="parity" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;endArrow=block;endFill=1" target="evenCalc" value="Evet: çift">
+          <mxGeometry relative="1" x="-0.6286" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="e10" edge="1" parent="1" source="parity" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;endArrow=block;endFill=1" target="oddCalc" value="Hayır: tek">
+          <mxGeometry relative="1" x="-0.7429" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="e11" edge="1" parent="1" source="evenCalc" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;endArrow=block;endFill=1" target="increment">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="e12" edge="1" parent="1" source="oddCalc" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;endArrow=block;endFill=1" target="increment">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="e13" edge="1" parent="1" source="increment" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;endArrow=block;endFill=1;entryX=1;entryY=0;entryDx=0;entryDy=0;" target="loop" value="Sonraki sayı">
+          <mxGeometry relative="1" x="-0.145" as="geometry">
+            <Array as="points">
+              <mxPoint x="1110" y="1375" />
+              <mxPoint x="1110" y="680" />
+              <mxPoint x="632.5" y="680" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="e14" edge="1" parent="1" source="output" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;endArrow=block;endFill=1" target="end">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>
